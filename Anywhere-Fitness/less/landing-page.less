@@ -1,0 +1,127 @@
+//Landing Page Code Here
+body {
+    max-width: 100%;
+    max-height: 100%;  
+    font-family: @Roboto-font;  
+}
+
+.container {
+    background-image: url(../images/inspired-horizons-digital-marketing-2J4n47XPS1Q-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid @main-color;
+
+    h1 {
+        font-size: 12rem;
+        color: @text-color;
+        text-shadow: 7px 7px @alternative-color;
+        text-align: center;
+        margin: 7%;
+    }//closes h1
+
+    .get-started-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    
+        button {
+            width: 70%;
+            background-color: @main-color;
+            color: @main-color;
+            font-size: 3rem;
+            text-shadow: 2px 2px @alternative-color;
+            padding: 2%;
+            border: 5px solid @text-color;
+            border-radius: 20px;
+            margin-bottom: 3%;  
+            
+            a {
+                text-decoration: none;
+                color: @text-color;
+            }//closes a
+        }//closes button
+
+        button:hover {
+            background-color: @alternative-color;
+            color: @main-color;
+
+        }//closes button:hover
+    }//closes .get-started-button
+}//closes .container
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    .container2-item-1 {
+        background-image: url(../images/luis-vidal-BLa_BWbM60g-unsplash.jpg);
+        background-size: cover;
+        background-position: bottom;
+        text-align: center;
+        padding: 5%;
+        border: 3px solid @main-color;
+
+        h2 {
+            font-size: 3.5rem;
+            color: @text-color;
+            text-shadow: 3px 3px @alternative-color;
+        }
+
+        p {
+            font-size: 2rem;
+            color: @text-color;
+            text-shadow: 2px 3px @alternative-color;
+            margin-top: 2%;
+            line-height: normal;
+        }//closes p
+    }//closes .container2-item-1
+
+    .container2-item-2 {
+        .container2-item-1();
+        background-image: url(../images/victor-freitas-fZsfqu2a-Mk-unsplash.jpg);
+    }//closes .container2-item-2
+
+    .about-team-section {
+        background-color: @alternative-color;
+        text-align: center;
+        border: 3px solid @main-color;
+
+        h2 {
+            color: @text-color;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px @alternative-color;
+            margin: 2% 0;
+        }
+
+        p {
+            color: @text-color;
+            font-size: 2rem;
+            text-shadow: 2px 2px @alternative-color;
+            margin: 1%;
+        }
+
+        button {
+            margin: 2%;
+            width: 30%;
+            background-color: @main-color;
+            border-radius: 10px;
+            padding: 1% 0;
+
+            a {
+                text-decoration: none;
+                color: @text-color;
+                text-shadow: 2px 2px @alternative-color;
+                font-size: 2rem;
+            }//closes a
+        }//closes button
+
+        button:hover {
+            color: @main-color;
+            background-color: @alternative-color;
+        }
+    }//closes .about-team-section
+
+}//closes .container2
